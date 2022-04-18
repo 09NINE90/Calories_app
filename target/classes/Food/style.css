@@ -1,0 +1,43 @@
+TextField{
+    -fx-background-radius: 7;
+    -fx-focus-color: #228F20 ;
+}
+
+TextField:selected{
+    -fx-text-box-border: #228F20 ;
+    -fx-focus-color: #228F20 ;
+}
+
+Label{
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 14px;
+}
+
+.labelBig{
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 20px;
+}
+
+ComboBox{
+    -fx-background-color: #228F20;
+    -fx-background-radius: 5;
+}
+
+RadioButton {
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 14px;
+}
+
+
+RadioButton:selected .dot{
+    -fx-background-color: #228F20;
+    -fx-background-insets: 0;
+}
+
+
+Button{
+    -fx-background-color: #228F20;
+    -fx-background-radius: 5;
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 14px;
+}

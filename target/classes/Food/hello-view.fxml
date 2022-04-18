@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" stylesheets="@style.css" prefWidth="420.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Food.MainFoodController">
+   <children>
+      <ComboBox fx:id="comboFood" styleClass="combo" layoutX="39.0" layoutY="98.0" prefHeight="25.0" prefWidth="220.0"  visibleRowCount="20" />
+      <TextField fx:id="textFieldWeight"  layoutX="277.0" layoutY="98.0" prefHeight="25.0" prefWidth="94.0" promptText="100 "  />
+      <TextField fx:id="textFieldCalories"  layoutX="39.0" layoutY="166.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="textFieldFats"  layoutX="39.0" layoutY="230.0"  />
+      <TextField fx:id="textFieldCarbohydrates"  layoutX="222.0" layoutY="230.0"  />
+      <TextField fx:id="textFieldProteins"  layoutX="222.0" layoutY="166.0"  />
+      <Label layoutX="39.0" layoutY="140.0" text="Калорийность, ккал" textFill="#228f20"></Label>
+      <Label layoutX="222.0" layoutY="140.0" text="Белки, г" textFill="#228f20"></Label>
+      <Label layoutX="39.0" layoutY="207.0" text="Жиры, г" textFill="#228f20"></Label>
+      <Label layoutX="222.0" layoutY="207.0" text="Углеводы, г" textFill="#228f20"></Label>
+      <Label layoutX="39.0" layoutY="72.0" text="Выберите продукт (блюдо)" textFill="#228f20"></Label>
+      <Button fx:id="btnResult" layoutX="130.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Посмотреть КБЖУ" textFill="WHITE"></Button>
+      <Button fx:id="btnSave" layoutX="122.0" layoutY="545.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="190.0" text="Сохранить прием пищи" textFill="WHITE"></Button>
+      <Label fx:id="labelWeight" layoutX="277.0" layoutY="72.0" text="Вес, г" textFill="#228f20"></Label>
+      <TextField fx:id="ageField" alignment="CENTER_RIGHT"  layoutX="39.0" layoutY="391.0" prefHeight="25.0" prefWidth="63.0" promptText="20" />
+      <TextField fx:id="weightField" alignment="CENTER_RIGHT"  layoutX="166.0" layoutY="391.0" prefHeight="25.0" prefWidth="63.0" promptText="75" />
+      <TextField fx:id="growthField" alignment="CENTER_RIGHT" layoutX="283.0" layoutY="391.0" prefHeight="25.0" prefWidth="63.0" promptText="170"  />
+      <Label layoutX="39.0" layoutY="372.0" text="Возраст" textFill="#228f20"></Label>
+      <Label layoutX="166.0" layoutY="372.0" text="Вес" textFill="#228f20"></Label>
+      <Label layoutX="110.0" layoutY="393.0" text="лет" textFill="#228f20"></Label>
+      <Label layoutX="233.0" layoutY="394.0" text="кг" textFill="#228f20"></Label>
+      <Label layoutX="283.0" layoutY="372.0" text="Рост" textFill="#228f20"></Label>
+      <Label layoutX="351.0" layoutY="394.0" text="см" textFill="#228f20"></Label>
+      <Label layoutX="75.0" layoutY="430.0" text="Пол" textFill="#228f20"></Label>
+      <RadioButton fx:id="radioMale" styleClass="d" layoutX="136.0" layoutY="430.0" mnemonicParsing="false" text="Мужской" textFill="#228f20"></RadioButton>
+      <RadioButton fx:id="radioFemale" layoutX="240.0" layoutY="430.0" mnemonicParsing="false" text="Женский" textFill="#228f20"></RadioButton>
+      <Label layoutX="39.0" layoutY="464.0" prefHeight="20.0" prefWidth="246.0" text="Степень физической активности" textFill="#228f20">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="comboActive" layoutX="39.0" layoutY="500.0" prefHeight="25.0" prefWidth="230.0" style="-fx-background-color: #228F20; -fx-background-radius: 5;" />
+      <Button fx:id="btnResultActive" layoutX="292.0" layoutY="460.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="102.0"  text="Рассчитать" textFill="WHITE"></Button>
+      <TextField fx:id="textFieldResultActive" alignment="CENTER_RIGHT"  layoutX="292.0" layoutY="500.0" prefHeight="25.0" prefWidth="73.0" />
+      <Label layoutX="372.0" layoutY="493.0" prefHeight="40.0" prefWidth="40.0" text="ккал/день" textFill="#228f20" wrapText="true"></Label>
+      <AnchorPane prefHeight="50.0" prefWidth="420.0" style="-fx-background-color: #228F20;">
+         <children>
+            <Label layoutX="117.0" styleClass="labelBig" layoutY="12.0" text="CALORIES COUNTER" textAlignment="CENTER" textFill="WHITE">
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="589.0" prefHeight="61.0" prefWidth="420.0" style="-fx-background-color: #228F20;">
+         <children>
+            <Label fx:id="labelSave" styleClass="labelBig" alignment="CENTER" layoutX="89.0" layoutY="15.0" prefHeight="33.0" prefWidth="246.0" text="546/2436 ккал" textFill="WHITE"></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="307.0" prefHeight="45.0" prefWidth="420.0" style="-fx-background-color: #228F20;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="labelSmall" layoutX="45.0" prefHeight="57.0" prefWidth="331.0" text="Вы можете рассчитать количество калорий, которое  вам необходимо потреблять" textAlignment="CENTER" textFill="WHITE" wrapText="true"></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
